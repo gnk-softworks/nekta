@@ -1,0 +1,41 @@
+{
+  "name": "nekta",
+  "version": "1.1.4",
+  "description": "A simple library of react + typescript components",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gnk-softworks/nekta.git"
+  },
+  "keywords": [
+    "next",
+    "ui",
+    "cc0",
+    "tailwind",
+    "ui library",
+    "nekta"
+  ],
+  "author": "Kawba",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/gnk-softworks/nekta/issues"
+  },
+  "homepage": "https://www.getnekta.com",
+  "peerDependencies": {
+    "next": "^14",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/react-dom": "^18",
+    "typescript": "^5.4.5"
+  }
+}
