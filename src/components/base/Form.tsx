@@ -20,18 +20,18 @@ export function Form(props: FormProps) {
     const [state, formAction] = useFormState(props.action, initialState);
 
     return (
-        <section className="" id={props.id}>
-            <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto h-full">
+        <section className="w-full" id={props.id}>
+            <div className="w-full flex flex-col items-center justify-center px-6 py-8 mx-auto h-full">
                 <div
-                    className="w-full bg-base-100 rounded-lg shadow-md md:mt-0 sm:max-w-md xl:p-0 ">
-                    <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
+                    className="w-full bg-base-100 rounded-lg shadow-md md:mt-0 sm:max-w-md xl:p-0">
+                    <div className="p-6 w-full space-y-4 md:space-y-6 sm:p-8">
                         <h2>
                             {props.title}
                         </h2>
                         {props.description && <p>{props.description}</p>}
                         <form className="space-y-4 md:space-y-6" action={formAction}>
                             { state.error && state.error !== '' && <div className="bg-error text-base-100 px-4 py-3 rounded relative"
-                                                     role="alert">
+                                                                        role="alert">
                                 <strong className="font-bold">Ooops...</strong>
                                 <span className="block sm:inline">{state.error}</span>
                             </div>
